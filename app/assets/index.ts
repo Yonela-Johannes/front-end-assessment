@@ -28,5 +28,6 @@ export  {
     desktopIGImageTwo,
     desktopIGImageThree,
     desktopIGImageFour,
-    desktopIGImageFive
+    desktopIGImageFive,
+    desktopUAThemeVideo
 }
