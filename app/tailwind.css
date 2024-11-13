@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 @font-face {
     font-family: 'Neue Plak Bold';
     src: url('/public/fonts/Neue-Plak-Bold.ttf') format('truetype');
