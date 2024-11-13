@@ -5,23 +5,30 @@
 
 @font-face {
     font-family: 'Neue Plak Bold';
-    src: url('/public/fonts/Neue-Plak-Bold.ttf') format('truetype');
+    src: url('/fonts/Neue-Plak-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Neue Plak Condensed Black';
-    src: url('/public/fonts/Neue-Plak-CondBlack.ttf') format('truetype'), url('/app/assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
+    src: url('/fonts/Neue-Plak-CondBlack.ttf') format('truetype'), url('/app/assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
 }
 @font-face {
     font-family: 'Neue Plak Regular';
-    src: url('/public/fonts/Neue-Plak-Regular.otf') format('truetype');
+    src: url('/fonts/Neue-Plak-Regular.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'Neue Plak SemiBold';
-    src: url('/public/fonts/Neue-Plak-SemiBold.otf') format('truetype');
+    src: url('/fonts/Neue-Plak-SemiBold.otf') format('truetype');
 }
 
 body {
-    font-family:'Satoshi', sans-serif;
+    font-family:'Neue Plak Regular', sans-serif;
+    font-size: 12px;
+}
+
+#video{
+    object-fit: initial;
+    width: 100%;
+    height: 100%;
 }

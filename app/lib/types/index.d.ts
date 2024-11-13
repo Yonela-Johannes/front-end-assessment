@@ -6,3 +6,9 @@ declare type ProductPageProps = {
     currentProduct: ProductEdge;
     upsellProducts?: UnbxdProduct[];
   };
+
+
+  export interface ITitle {
+    title: string;
+    description: string
+  }

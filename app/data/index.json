@@ -1,0 +1,45 @@
+
+{
+        "landing": {
+            "title" : "Check out our latest gear",
+            "description": "Advanced tech, superior comfort and all performance is what our latest UA gear is all about. Built to go further, push hard and break your boundaries."
+        },
+        "hero": {
+            "title" : "EVERY SIDE OF STRONG",
+            "description": "The Underground collection is inspired by the idea of a Project Rock fight club. A place where we push each other harder to make each other stronger. A drop dedicated to you and your crew. The neon colourways are a reflection of the energy we bring to every rep, every set and every challenge.  "
+        },
+        "sectionOne": {
+            "title" : "Our best gear",
+            "description": "Unlock your potential with the best UA Gear",
+            "categories": [
+                {
+                    "title": "Train",
+                    "imgSrc": "./app/assets/shared/Train.jpg"
+                },
+                {
+                    "title": "Run",
+                    "imgSrc": "./app/assets/shared/Run.jpg"
+                },
+                {
+                    "title": "Golf",
+                    "imgSrc": "./app/assets/shared/Golf.jpg"
+                },
+                {
+                    "title": "Accessories",
+                    "imgSrc": "./app/assets/shared/Accessories.jpg"
+                }
+            ]
+        },
+        "sectionTwo": {
+            "title" : "Discover our latest promotions",
+            "description": "Discover our latest promotions"
+    },
+        "sectionThree": {
+            "title" : "What’s happening on Instagram",
+            "description": "Don’t miss out on the latest news and updates from Under Armour."
+        },
+        "sectionFive": {
+            "title" : "",
+            "description": ""
+        }
+}
