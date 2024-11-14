@@ -23,6 +23,8 @@ export default function index() {
             showArrows={false}
             showStatus={false}
             showIndicators={false}
+            infiniteLoop={true}
+            centerMode={false}
           >
             {products.map((category, i) => (
               <Card key={i} category={category} />

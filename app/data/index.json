@@ -79,7 +79,8 @@
       {
         "title": "IGVid",
         "imgSrc": "./app/assets/shared/Ig.png",
-        "vidSrc": "./app/assets/shared/ig_video.mp4"
+        "vidSrc": "./app/assets/shared/ig_video.mp4",
+        "mobileVidSrc": "./app/assets/shared/ig_video.mp4"
       },
       {
         "title": "Promo",

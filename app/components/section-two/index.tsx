@@ -30,7 +30,7 @@ export default function index() {
           </Carousel>
         </div>
       ) : (
-        <div className="flex">
+        <div className="flex gap-x-2">
           {categories.map((category, i) => (
             <Card key={i} category={category} />
           ))}
