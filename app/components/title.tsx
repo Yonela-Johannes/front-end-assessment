@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React, { FC, Fragment } from "react";
 import { ITitle } from "~/lib/types";
 import { Button } from "./ui/button";
 import compare from "../data/index.json";
 import useWindowSize from "~/hooks/useWindowSize";
 import ContentWrapper from "./content-wrapper";
 
-export default function Title({ title, description, btnTitle }) {
+const Title: FC<ITitle> = ({ title, description, btnTitle }) => {
   const { title: t, description: d } = compare.landing;
   const { title: heroTitle } = compare.hero;
   const windowSize = useWindowSize();
@@ -57,3 +57,5 @@ export default function Title({ title, description, btnTitle }) {
     </ContentWrapper>
   );
 }
+
+export default Title

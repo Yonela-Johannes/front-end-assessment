@@ -56,19 +56,23 @@
     "products": [
       {
         "title": "Promo",
-        "imgSrc": "./app/assets/shared/Promo 1.jpg"
+        "imgSrc": "./app/assets/shared/Promo 1.jpg",
+        "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "./app/assets/shared/Promo 2.jpg"
+        "imgSrc": "./app/assets/shared/Promo 2.jpg",
+        "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "./app/assets/shared/Promo 3.jpg"
+        "imgSrc": "./app/assets/shared/Promo 3.jpg",
+        "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "./app/assets/shared/Promo 4.jpg"
+        "imgSrc": "./app/assets/shared/Promo 4.jpg",
+        "link":""
       }
     ]
   },

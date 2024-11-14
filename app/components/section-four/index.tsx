@@ -5,18 +5,17 @@ import Card from "../card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import useWindowSize from "~/hooks/useWindowSize";
-
-type Props = {};
+import { IData, ITitle } from "~/lib/types";
 
 export default function index() {
-  const { title, description, products } = headerData.sectionFour;
+  const { title, description, products } : IData["section"] = headerData.sectionFour;
   const windowSize = useWindowSize();
   const { isMobile } = windowSize;
 
   return (
     <div className={`max-w-[1292px] flex-col w-full items-center`}>
-      <Title title={title} description={description} />
-      <div className="flex">
+      <Title title={title} description={description} btnTitle={""} />
+      <div className="flex gap-2">
         {isMobile ? (
           <Carousel
             emulateTouch={true}
@@ -26,12 +25,12 @@ export default function index() {
             infiniteLoop={true}
             centerMode={false}
           >
-            {products.map((category, i) => (
-              <Card key={i} category={category} />
+            {products.map((product, i) => (
+              <Card key={i} elem={product} />
             ))}
           </Carousel>
         ) : (
-          products.map((category, i) => <Card key={i} category={category} />)
+          products.map((product, i) => <Card key={i} elem={product} />)
         )}
       </div>
     </div>

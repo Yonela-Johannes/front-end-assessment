@@ -5,6 +5,7 @@ import Card from "../card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import useWindowSize from "~/hooks/useWindowSize";
+import { ICategory, IData } from "~/lib/types";
 
 type Props = {};
 
@@ -12,7 +13,7 @@ export default function index() {
   const windowSize = useWindowSize();
   const { isMobile } = windowSize;
 
-  const { title, description, categories } = headerData.sectionOne;
+  const { title, description, categories } : IData["section"] = headerData.sectionOne;
   return (
     <div className="flex flex-col w-full max-w-[1292px]">
       <Title title={title} description={description} />
@@ -24,15 +25,15 @@ export default function index() {
             showStatus={false}
             showIndicators={false}
           >
-            {categories.map((category, i) => (
-              <Card key={i} category={category} />
+            {categories.map((category, i: number) => (
+              <Card key={i} elem={category as ICategory} />
             ))}
           </Carousel>
         </div>
       ) : (
         <div className="flex gap-x-2">
-          {categories.map((category, i) => (
-            <Card key={i} category={category} />
+          {categories.map((category, i: number) => (
+            <Card key={i} elem={category as ICategory} />
           ))}
         </div>
       )}

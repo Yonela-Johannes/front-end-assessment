@@ -1,17 +1,13 @@
 import { Link } from "@remix-run/react";
 import VideoPlayer from "./video-player";
+import { IData, IProduct } from "~/lib/types";
+import { FC } from "react";
 
-type Props = {
-  product: Array<{
-    imgSrc: string;
-    title: string;
-  }>;
-};
 
-export default function GridCard({ product }: Props) {
+const GridCard : FC<IData["section"]["product"]> = ({ product }) => {
 
   return (
-    <div className="grid lg:grid-cols-4 w-full justify-center items-center">
+    <div className="grid lg:grid-cols-4 w-full gap-1 lg:gap-0 justify-center items-center">
       <div className="relative col-span-2 w-full h-[461px] lg:h-[744px] lg:w-[595px] row-span-2 bg-blue-700">
         <VideoPlayer vidSrc={product[0].vidSrc} mobileVidSrc={product[0].mobileVidSrc} />
         <div className="absolute bottom-0 right-0 w-16 h-16">
@@ -23,7 +19,7 @@ export default function GridCard({ product }: Props) {
         </div>
       </div>
 
-      <div className="col-span-1 row-span-2 flex flex-col w-full h-full lg:-ml-10">
+      <div className="col-span-1 row-span-2 flex flex-col gap-2 w-full h-full lg:-ml-10">
         <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
             className="object-cover w-full h-full"
@@ -40,7 +36,7 @@ export default function GridCard({ product }: Props) {
         </div>
       </div>
 
-      <div className="col-span-1 row-span-2 flex flex-col w-full h-full lg:-ml-4">
+      <div className="col-span-1 row-span-2 flex flex-col gap-2 w-full h-full lg:-ml-4">
         <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
             className="object-cover w-full h-full"
@@ -59,3 +55,5 @@ export default function GridCard({ product }: Props) {
     </div>
   );
 }
+
+export default GridCard
