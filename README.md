@@ -13,6 +13,12 @@ WBWR FRONT END ASSESSMENT
 </div>
 
 
+## <a name="tech-stack">To do !</a>
+
+- Finish types on elemts and data.
+- Images and videos should display on deployed version.
+
+
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Remix
