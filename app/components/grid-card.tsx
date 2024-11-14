@@ -8,7 +8,7 @@ const GridCard : FC<IData["section"]["product"]> = ({ product }) => {
 
   return (
     <div className="grid lg:grid-cols-4 w-full gap-1 lg:gap-0 justify-center items-center">
-      <div className="relative col-span-2 w-full h-[461px] lg:h-[744px] lg:w-[595px] row-span-2 bg-blue-700">
+      <div className="relative col-span-2 w-full h-[461px] lg:h-[744px] lg:w-[595px] row-span-2">
         <VideoPlayer vidSrc={product[0].vidSrc} mobileVidSrc={product[0].mobileVidSrc} />
         <div className="absolute bottom-0 right-0 w-16 h-16">
           <img
