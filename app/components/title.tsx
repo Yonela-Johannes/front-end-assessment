@@ -5,7 +5,7 @@ import compare from "../data/index.json";
 import useWindowSize from "~/hooks/useWindowSize";
 import ContentWrapper from "./content-wrapper";
 
-const Title: FC<ITitle> = ({ title, description, btnTitle }) => {
+const Title: FC<ITitle> = ({ title, description, btnTitle, header }) => {
   const { title: t, description: d } = compare.landing;
   const { title: heroTitle } = compare.hero;
   const windowSize = useWindowSize();
@@ -14,7 +14,7 @@ const Title: FC<ITitle> = ({ title, description, btnTitle }) => {
   return (
     <ContentWrapper>
       {title === t ? (
-        <header className={`flex flex-col lg:gap-y-[30px]`}>
+        <header className={`flex flex-col gap-[20px] lg:gap-y-[30px]`}>
           <h1
             className={`text-[48px] lg:text-[105px] font-np-cond-black leading-[90%] uppercase`}
           >
@@ -30,9 +30,10 @@ const Title: FC<ITitle> = ({ title, description, btnTitle }) => {
           </Button>
         </header>
       ) : title === heroTitle ? (
-        <header className={`flex flex-col gap-y-4 lg:gap-y-[30px] h-full bold`}>
+        <header className={`flex flex-col gap-y-2 lg:gap-y-[30px] h-full bold`}>
+          {header  ? (<p className="capitalize font-np-bold text-[16-px]">{header}</p>) : ('')}
           <h1
-            className={`text-[48px] w-[200px] lg:text-[64px] font-np-cond-black leading-[90%] uppercase lg:w-[260px]`}
+            className={`text-[48px] lg:text-[64px] font-np-cond-black leading-[90%] uppercase lg:w-[260px]`}
           >
             {title}
           </h1>
