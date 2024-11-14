@@ -5,10 +5,12 @@ import headerData from "~/data/index.json";
 type Props = {};
 
 export default function index () {
-  const { title, description } = headerData.sectionThree;
+  const { title, description, bgImg } = headerData.sectionThree;
   return (
-    <div className="items-center text-center w-full bg-slate-900">
-      <Title title={title} description={description} />
+    <div className={`bg-[url(${bgImg})] w-[1290px] h-[500px] items-center text-center`}>
+      {/* <Title title={title} description={description} /> */}
+
+    <img src={bgImg} className="h-full w-full object-cover" />
     </div>
   );
 }

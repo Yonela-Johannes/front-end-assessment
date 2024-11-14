@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Neue Plak Condensed Black';
-    src: url('/fonts/Neue-Plak-CondBlack.ttf') format('truetype'), url('/app/assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf');
+    src: url('/fonts/Neue-Plak-CondBlack.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Neue Plak Regular';
@@ -28,7 +28,7 @@ body {
 }
 
 #video{
-    object-fit: initial;
+    object-fit: fill;
     width: 100%;
     height: 100%;
 }

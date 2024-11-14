@@ -5,7 +5,10 @@ import Header from "~/components/header";
 
 import SectionOne from "~/components/section-one";
 import SectionTwo from "~/components/section-two";
-// import SectionThree from "~/components/section-three";
+import SectionThree from "~/components/section-three";
+import SectionFour from "~/components/section-four";
+import SectionFive from "~/components/section-five";
+
 import { Fragment } from "react/jsx-runtime";
 
 export const meta: MetaFunction = () => {
@@ -21,13 +24,15 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="min-h-screen">
-      {/* <Header /> */}
-      {/* <Wrapper> */}
-        {/* <SectionOne /> */}
+      <Header />
+      <Wrapper>
+        <SectionOne />
         <SectionTwo />
-        {/* <SectionThree /> */}
-      {/* </Wrapper> */}
-      {/* <Footer /> */}
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+      </Wrapper>
+      <Footer />
     </div>
   );
 }
