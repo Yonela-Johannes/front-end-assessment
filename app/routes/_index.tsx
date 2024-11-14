@@ -10,6 +10,7 @@ import SectionFour from "~/components/section-four";
 import SectionFive from "~/components/section-five";
 
 import { Fragment } from "react/jsx-runtime";
+import { useEffect, useState } from "react";
 
 export const meta: MetaFunction = () => {
   return [

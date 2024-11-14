@@ -4,8 +4,8 @@ type Props = {}
 
 export default function Header () {
   return (
-    <div className='h-[80px] w-full bg-primary_bg'>
+    <nav className='h-[80px] w-full bg-primary_bg'>
 
-    </div>
+    </nav>
   )
 }

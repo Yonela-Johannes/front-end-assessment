@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import VideoPlayer from "./video-player";
 
 type Props = {
   product: Array<{
@@ -8,80 +9,51 @@ type Props = {
 };
 
 export default function GridCard({ product }: Props) {
+  console.log(product);
   return (
-    <div className="grid grid-cols-4 gap-4 w-full">
-      {/* First column with one large image taking 2 rows */}
-      <div className="col-span-2 row-span-2">
-        <img
-          className="w-full h-full object-cover"
-          src={product[0].imgSrc}
-          alt={product[0].title}
-        />
-        <Link
-          className="font-np-semi-bold text-[14px] my-6 block"
-          to={product[0].title}
-        >
-          {product[0].title}
-        </Link>
+    <div className="grid lg:grid-cols-4 w-full justify-center items-center">
+      <div className="relative col-span-2 w-full h-[461px] lg:h-[744px] lg:w-[595px] row-span-2 bg-blue-700">
+        <VideoPlayer vidSrc={product[0].vidSrc} />
+        <div className="absolute bottom-0 right-0 w-16 h-16">
+          <img
+            className="object-cover w-full h-full"
+            src={product[0].imgSrc}
+            alt={product[0].title}
+          />
+        </div>
       </div>
 
-      {/* Second column with two smaller images, stacked */}
-      <div className="col-span-1 row-span-2 gap-4 flex flex-col">
-        <div>
+      <div className="col-span-1 row-span-2 gap-2 flex flex-col w-full h-full lg:-ml-10">
+        <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
             src={product[1].imgSrc}
             alt={product[1].title}
           />
-          <Link
-            className="font-np-semi-bold text-[14px] my-6 block"
-            to={product[1].title}
-          >
-            {product[1].title}
-          </Link>
         </div>
-        <div>
+        <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
             src={product[2].imgSrc}
             alt={product[2].title}
           />
-          <Link
-            className="font-np-semi-bold text-[14px] my-6 block"
-            to={product[2].title}
-          >
-            {product[2].title}
-          </Link>
         </div>
       </div>
 
-      {/* Third column with two smaller images, side-by-side */}
-      <div className="col-span-1 row-span-2 gap-4 flex flex-col">
-        <div className="flex-1">
+      <div className="col-span-1 row-span-2 gap-2 flex flex-col w-full h-full lg:-ml-4">
+        <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
             src={product[3].imgSrc}
             alt={product[3].title}
           />
-          <Link
-            className="font-np-semi-bold text-[14px] my-6 block"
-            to={product[3].title}
-          >
-            {product[3].title}
-          </Link>
         </div>
-        <div className="flex-1">
+        <div className="w-[178px] h-[194px] lg:w-[338px] lg:h-[368px]">
           <img
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
             src={product[4].imgSrc}
             alt={product[4].title}
           />
-          <Link
-            className="font-np-semi-bold text-[14px] my-6 block"
-            to={product[4].title}
-          >
-            {product[4].title}
-          </Link>
         </div>
       </div>
     </div>
