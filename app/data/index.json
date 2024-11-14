@@ -4,15 +4,15 @@
     "title": "Check out our latest gear",
     "description": "Advanced tech, superior comfort and all performance is what our latest UA gear is all about. Built to go further, push hard and break your boundaries.",
     "btnTitle": "Shop UA New Arrivals",
-    "vidSrc": "/app/assets/desktop/UA_Theme_1_DT.mp4",
-    "mobileVidSrc": "/app/assets/mobile/UA_Theme_1_MB.mp4"
+    "vidSrc": "/desktop/UA_Theme_1_DT.mp4",
+    "mobileVidSrc": "/mobile/UA_Theme_1_MB.mp4"
   },
   "hero": {
     "header": "Project Rock",
     "title": "EVERY SIDE OF STRONG",
     "description": "The Underground collection is inspired by the idea of a Project Rock fight club. A place where we push each other harder to make each other stronger. A drop dedicated to you and your crew. The neon colourways are a reflection of the energy we bring to every rep, every set and every challenge.",
-    "bgImg": "/app/assets/desktop/UA_Theme_2_DT.jpg",
-    "mobileBgImg": "/app/assets/mobile/UA_Theme_2_MB.jpg",
+    "bgImg": "/desktop/UA_Theme_2_DT.jpg",
+    "mobileBgImg": "/mobile/UA_Theme_2_MB.jpg",
     "btnTitle": "shop project rock"
   },
   "sectionOne": {
@@ -21,22 +21,22 @@
     "categories": [
       {
         "title": "Train",
-        "imgSrc": "/app/assets/shared/Train.jpg",
+        "imgSrc": "/shared/Train.jpg",
         "btnTitle": "Shop Now"
       },
       {
         "title": "Run",
-        "imgSrc": "/app/assets/shared/Run.jpg",
+        "imgSrc": "/shared/Run.jpg",
         "btnTitle": "Shop Now"
       },
       {
         "title": "Golf",
-        "imgSrc": "/app/assets/shared/Golf.jpg",
+        "imgSrc": "/shared/Golf.jpg",
         "btnTitle": "Shop Now"
       },
       {
         "title": "Accessories",
-        "imgSrc": "/app/assets/shared/Accessories.jpg",
+        "imgSrc": "/shared/Accessories.jpg",
         "btnTitle": "Shop Now"
       }
     ]
@@ -48,7 +48,7 @@
   "sectionThree": {
     "title": "What’s happening on Instagram",
     "description": "Don’t miss out on the latest news and updates from Under Armour.",
-    "bgImg": "/app/assets/desktop/UA_Theme_2_DT.jpg"
+    "bgImg": "/desktop/UA_Theme_2_DT.jpg"
   },
   "sectionFour": {
     "title": "Discover our latest promotions",
@@ -56,22 +56,22 @@
     "products": [
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/shared/Promo 1.jpg",
+        "imgSrc": "/shared/Promo 1.jpg",
         "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/shared/Promo 2.jpg",
+        "imgSrc": "/shared/Promo 2.jpg",
         "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/shared/Promo 3.jpg",
+        "imgSrc": "/shared/Promo 3.jpg",
         "link":""
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/shared/Promo 4.jpg",
+        "imgSrc": "/shared/Promo 4.jpg",
         "link":""
       }
     ]
@@ -82,25 +82,25 @@
     "products": [
       {
         "title": "IGVid",
-        "imgSrc": "/app/assets/shared/Ig.png",
-        "vidSrc": "/app/assets/shared/ig_video.mp4",
-        "mobileVidSrc": "/app/assets/shared/ig_video.mp4"
+        "imgSrc": "/shared/IG.png",
+        "vidSrc": "/shared/ig_video.mp4",
+        "mobileVidSrc": "/shared/ig_video.mp4"
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/desktop/IG Image 2_DT.jpg"
+        "imgSrc": "/desktop/IG Image 2_DT.jpg"
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/desktop/IG Image 4_DT.jpg"
+        "imgSrc": "/desktop/IG Image 4_DT.jpg"
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/desktop/IG Image 3_DT.jpg"
+        "imgSrc": "/desktop/IG Image 3_DT.jpg"
       },
       {
         "title": "Promo",
-        "imgSrc": "/app/assets/desktop/IG Image 5_DT.jpg"
+        "imgSrc": "/desktop/IG Image 5_DT.jpg"
       }
     ]
   }
