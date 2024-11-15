@@ -16,16 +16,16 @@ const Title: FC<ITitle> = ({ title, description, btnTitle, header }) => {
       {title === t ? (
         <header className={`flex flex-col gap-[20px] lg:gap-y-[30px]`}>
           <h1
-            className={`text-[48px] lg:text-[105px] font-np-cond-black leading-[90%] uppercase`}
+            className={`text-[48px] 2xl:text-[105px] font-np-cond-black leading-[90%] uppercase`}
           >
             {title}
           </h1>
           <p
-            className={`text-[14px] w-full lg:text-[12px] lg:w-[238px] font-np-regular`}
+            className={`text-[14px] w-full lg:text-[12px] xl:w-[238px] font-np-regular`}
           >
             {description}
           </p>
-          <Button className="w-full lg:w-[258.8px] bg-black text-white capitalize lg:uppercase">
+          <Button className="w-full xl:w-[258.8px] bg-black text-white capitalize lg:uppercase">
             {btnTitle}
           </Button>
         </header>

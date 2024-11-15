@@ -15,11 +15,11 @@ export default function index() {
   const { isMobile } = windowSize;
 
   return (
-    <div className={`max-w-[1292px] flex-col w-full items-center`}>
-      <Title title={title} description={description} btnTitle={""} />
-      <div className="flex gap-2">
-        {isMobile ? (
-          <ContentWrapper>
+    <ContentWrapper>
+      <div className={`max-w-[1292px] flex-col w-full items-center`}>
+        <Title title={title} description={description} btnTitle={""} />
+        <div className="flex gap-2">
+          {isMobile ? (
             <Carousel
               emulateTouch={true}
               showArrows={false}
@@ -32,11 +32,11 @@ export default function index() {
                 <Card key={i} elem={product} />
               ))}
             </Carousel>
-          </ContentWrapper>
-        ) : (
-          products.map((product, i) => <Card key={i} elem={product} />)
-        )}
+          ) : (
+            products.map((product, i) => <Card key={i} elem={product} />)
+          )}
+        </div>
       </div>
-    </div>
+    </ContentWrapper>
   );
 }
