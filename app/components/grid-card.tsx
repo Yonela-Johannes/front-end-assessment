@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 import VideoPlayer from "./video-player";
-import { IData, IProduct } from "~/lib/types";
+import { IData } from "~/lib/types";
 import { FC } from "react";
 
 

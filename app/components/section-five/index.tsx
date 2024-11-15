@@ -3,15 +3,19 @@ import headerData from "~/data/index.json";
 import GridCard from "../grid-card";
 import Title from "../title";
 import { IData } from "~/lib/types";
+import ContentWrapper from "../content-wrapper";
 
 export default function Index() {
-  const { title, description, products }: IData['section'] = headerData.sectionFive;
+  const { title, description, products }: IData["section"] =
+    headerData.sectionFive;
   return (
-    <div className="max-w-[1291px] w-full items-center">
-      <Title title={title} description={description} />
-      <div className="h-full w-full">
-        <GridCard product={products} />
+    <ContentWrapper>
+      <div className="max-w-[1291px] w-full items-center">
+        <Title title={title} description={description} />
+        <div className="h-full w-full">
+          <GridCard product={products} />
+        </div>
       </div>
-    </div>
+    </ContentWrapper>
   );
 }

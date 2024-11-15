@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Title from "../title";
 import headerData from "~/data/index.json";
 import VideoPlayer from "../video-player";
-import useWindowSize from "~/hooks/useWindowSize";
-
-type Props = {};
 
 export default function index() {
   const { title, description, btnTitle, vidSrc, mobileVidSrc } =
@@ -14,7 +11,7 @@ export default function index() {
       <div className="flex items-center self-center flex-col lg:absolute w-[355.91] lg:w-[333px] left-[56%] ">
         <Title title={title} description={description} btnTitle={btnTitle} />
       </div>
-      <div className="min-h[393px] lg:h-[700px]">
+      <div className="">
         <VideoPlayer vidSrc={vidSrc} mobileVidSrc={mobileVidSrc} />
       </div>
     </section>

@@ -17,10 +17,10 @@ export default function index() {
   const { title, description, categories }: IData["section"] =
     headerData.sectionOne;
   return (
-    <div className="flex flex-col w-full max-w-[1292px]">
-      <Title title={title} description={description} />
-      {isMobile ? (
-        <ContentWrapper>
+    <ContentWrapper>
+      <div className="flex flex-col w-full max-w-[1292px]">
+        <Title title={title} description={description} />
+        {isMobile ? (
           <div className="flex">
             <Carousel
               emulateTouch={true}
@@ -33,14 +33,14 @@ export default function index() {
               ))}
             </Carousel>
           </div>
-        </ContentWrapper>
-      ) : (
-        <div className="flex gap-x-2">
-          {categories.map((category, i: number) => (
-            <Card key={i} elem={category as ICategory} />
-          ))}
-        </div>
-      )}
-    </div>
+        ) : (
+          <div className="flex gap-x-2">
+            {categories.map((category, i: number) => (
+              <Card key={i} elem={category as ICategory} />
+            ))}
+          </div>
+        )}
+      </div>
+    </ContentWrapper>
   );
 }

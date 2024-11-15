@@ -4,7 +4,7 @@ type Props = {}
 
 const ContentWrapper = ({children}) => {
   return (
-    <div className='px-2 lg:p-0'>
+    <div className='px-2 sm:px-6'>
         {children}
     </div>
   )
